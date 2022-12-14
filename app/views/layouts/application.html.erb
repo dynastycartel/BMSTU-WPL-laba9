@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Laba9</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <style type="text/css">
+      table {
+        width: 50vw;
+      }
+      td, th, table {
+        border: 1px solid darkcyan;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      td, th {
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

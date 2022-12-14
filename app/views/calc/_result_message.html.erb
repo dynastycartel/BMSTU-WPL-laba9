@@ -1,0 +1,20 @@
+<h3><%= @output_msg %></h3>
+<% unless @result.is_a? String %>
+	<table>
+		<tr>
+			<th>Десятичная форма</th>
+			<th>Двоичная форма</th>
+		</tr>
+			<% @result.each do |key, value| %>
+				<tr>
+					<td><%= key %></td>
+					<td><%= value %></td>
+				</tr>
+			<% end %>
+	</table>
+	<p>
+		Количество палиндромов: <span id="counter"><%= @result.size %></span>
+	</p>
+<% else %>
+	<span id="result-msg"><%= @result %></span>
+<% end %>

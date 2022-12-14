@@ -1,0 +1,11 @@
+<h1 align="center">Ввод</h1>
+<h3>Введите число от 1 до 1.000.000. Программа покажет вам, какие числа в этом диапазоне являются палиндромами как в десятичной, так и в двоичной системе.</h3>
+
+<%= form_with url: output_path do |form| %>
+<%= form.label('Введите число:') %>
+<%= form.text_field(:user_input, id: 'num') %><br/><br/>
+<%= form.submit('Подтвердить', id: 'btn') %>
+<% end %>
+
+<div id='result-container'></div>
+
